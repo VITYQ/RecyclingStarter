@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:textSize="22sp"
+        android:fontFamily="@font/exo2"
+        android:textFontWeight="600"
+        android:text="@string/register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginHorizontal="48dp"
+        android:hint="@string/name"
+        android:drawablePadding="11dp"
+        android:includeFontPadding="true"
+        android:fontFamily="@font/exo2_another"
+        android:textFontWeight="500"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="11dp"
+        android:fontFamily="@font/exo2_another"
+        android:hint="@string/surname"
+        android:includeFontPadding="true"
+        android:maxWidth="280dp"
+        android:paddingBottom="20dp"
+        android:textFontWeight="500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_name" />
+
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="11dp"
+        android:fontFamily="@font/exo2_another"
+        android:hint="@string/phone"
+        android:includeFontPadding="true"
+        android:maxWidth="280dp"
+        android:paddingBottom="20dp"
+        android:textFontWeight="500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_surname" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="11dp"
+        android:fontFamily="@font/exo2_another"
+        android:hint="@string/email_big"
+        android:includeFontPadding="true"
+        android:maxWidth="280dp"
+        android:paddingBottom="20dp"
+        android:textFontWeight="500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_phone" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="11dp"
+        android:fontFamily="@font/exo2_another"
+        android:hint="@string/password"
+        android:includeFontPadding="true"
+        android:maxWidth="280dp"
+        android:paddingBottom="20dp"
+        android:textFontWeight="500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+
+    <EditText
+        android:id="@+id/editText_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="11dp"
+        android:fontFamily="@font/exo2_another"
+        android:hint="@string/address"
+        android:includeFontPadding="true"
+        android:maxWidth="280dp"
+        android:paddingBottom="20dp"
+        android:textFontWeight="500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password" />
+
+    <EditText
+        android:id="@+id/editText_office"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="11dp"
+        android:fontFamily="@font/exo2_another"
+        android:hint="@string/office"
+        android:includeFontPadding="true"
+        android:maxWidth="280dp"
+        android:paddingBottom="20dp"
+        android:textFontWeight="500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_address" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:maxWidth="280dp"
+        android:text="@string/lets_register"
+        android:layout_marginBottom="83dp"
+        android:layout_marginHorizontal="48dp"
+        android:background="@drawable/ripple_button_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_registered"
+        android:layout_marginBottom="32dp"
+        android:textFontWeight="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

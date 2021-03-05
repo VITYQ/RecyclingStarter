@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SignInActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/ic_logo_top_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signin"
+        android:textFontWeight="600"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/exo2_another"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginHorizontal="48dp"
+        android:hint="@string/email"
+        android:drawablePadding="11dp"
+        android:includeFontPadding="true"
+        android:fontFamily="@font/exo2_another"
+        android:textFontWeight="500"
+        android:paddingBottom="20dp"
+        android:drawableLeft="@drawable/ic_alternate_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="48dp"
+        android:includeFontPadding="true"
+        android:paddingBottom="20dp"
+        android:drawablePadding="11dp"
+        android:maxWidth="280dp"
+        android:hint="@string/password"
+        android:fontFamily="@font/exo2_another"
+        android:textFontWeight="500"
+        android:drawableLeft="@drawable/ic_key"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/button_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:maxWidth="280dp"
+        android:text="@string/signin_button"
+        android:layout_marginBottom="83dp"
+        android:layout_marginHorizontal="48dp"
+        android:fontFamily="@font/exo2_another"
+        android:background="@drawable/ripple_button_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_account"
+        android:layout_marginBottom="32dp"
+        android:textFontWeight="100"
+        android:fontFamily="@font/exo2_another"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
