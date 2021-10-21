@@ -1,4 +1,4 @@
-package com.example.recyclingstarter
+package com.infolab.recyclingstarter
 
 import org.junit.Test
 

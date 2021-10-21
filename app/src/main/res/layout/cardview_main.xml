@@ -17,6 +17,12 @@
         <variable
             name="progress"
             type="Integer" />
+        <variable
+            name="containerId"
+            type="Integer" />
+        <variable
+            name="location"
+            type="String" />
     </data>
 
     <FrameLayout
@@ -34,15 +40,15 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/button_Decrease"
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="41dp"
-                    android:layout_marginBottom="70dp"
+                    android:layout_marginBottom="50dp"
                     android:textAlignment="center"
                     android:fontFamily="@font/exo2_another"
                     android:text="-"
-                    android:onClick="@{onClickDecrease}"
+
                     android:textFontWeight="600"
                     android:textSize="40sp"
                     android:background="?attr/selectableItemBackgroundBorderless"
@@ -51,17 +57,17 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/button_Increase"
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="41dp"
-                    android:layout_marginBottom="70dp"
+                    android:layout_marginBottom="50dp"
                     android:textAlignment="center"
                     android:fontFamily="@font/exo2_another"
                     android:text="+"
                     android:textFontWeight="600"
                     android:textSize="40sp"
-                    android:onClick="@{onClickIncrease}"
+
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:clickable="true"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +76,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="76dp"
+                    android:layout_marginBottom="56dp"
                     android:fontFamily="@font/exo2_another"
                     android:text="@{precentname+ ` %`}"
                     android:textFontWeight="600"
@@ -80,10 +86,24 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
+                    android:id="@+id/textView_Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52dp"
+                    android:fontFamily="@font/exo2_another"
+                    android:text="@{`Контейнер `+ containerId}"
+                    android:textFontWeight="500"
+                    android:textColor="#aaa"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
                     android:id="@+id/textView_fullness"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="62dp"
+                    android:layout_marginTop="82dp"
                     android:fontFamily="@font/exo2_another"
                     android:text="Пуст"
                     android:textFontWeight="500"
@@ -98,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
                     android:fontFamily="@font/exo2_another"
-                    android:text="Контейнер №4055"
+                    android:text="@{`Кабинет `+ location}"
                     android:textFontWeight="600"
                     android:textSize="24sp"
                     app:layout_constraintEnd_toEndOf="parent"
